@@ -1,0 +1,17 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <span class="navbar-text">
+            Welcome to RxJS testing <br />
+            <b><small>by alefuentes</small></b>
+        </span>
+
+        <button type="button" class="btn btn-primary position-relative" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+            my Bag
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                {{(myBag$ | async)?.length}}
+            </span>
+        </button>
+    </div>
+</nav>
+<app-sidebar></app-sidebar>
